@@ -154,10 +154,9 @@ class CrmHelper extends CActiveRecord
         $mail->SMTPSecure = "tls";
         $mail->Port = 587;
 		
-		$mail->Username = 'richard@richardroscoe.co.uk';
-		$mail->Password = '9w8PJZODiVBf';
-//		$mail->SetFrom('crm@richardroscoe.co.uk', 'CRM');
-$mail->SetFrom('richard@richardroscoe.co.uk', 'Richard Roscoe');
+		$mail->Username = '';
+		$mail->Password = '';
+		$mail->SetFrom('', '');
 
 		$mail->Body = $msg->body;
 		$mail->AddAddress(str_replace(' ', '', $mobile).'@txtlocal.co.uk');
